@@ -14,8 +14,7 @@ function makeGrid() {
 		table.append("<tr></tr>");
 		
 		for (let j = 0; j < height; j++) {
-			console.log(table.children());
-			table.children().append("<td></td>");
+			table.children().last().append("<td></td>");
 		}
 	}
 }
