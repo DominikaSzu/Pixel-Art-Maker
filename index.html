@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Wonderful Pixel Art Maker</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>Pixel Art Maker</h1>
+		<h3>Create your own piece of art! :)</h3>
+	</header>
+	<main>
+		<h4>How big your grid should be?</h4>
+		<form id="grid_size">
+			<span>Height: </span>
+			<input type="number" id="input-height" min="1" max="1000" name="height" value="1">
+			<span>Width: </span>
+			<input type="number" id="input-width" min="1" max="1000" name="width" value="1">
+			<input type="submit" id="submit-button">
+		</form>
+		<h4>Which color?</h4>
+		<input type="color" id="color-picker">
+		<h5>Now, just paint! :)</h5>
+		<table id="canvas"></table>
+	</main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
