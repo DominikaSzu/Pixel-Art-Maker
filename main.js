@@ -39,7 +39,5 @@ $("body").on("click", "td", function() {
 	$(this).add().css("background-color", color);
 })
 
-// changing the size of grid's square
-
 
 
