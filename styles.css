@@ -37,6 +37,16 @@ input[type=number] {
 	width: 4rem;
 }
 
+#paint-text {
+	display: none;
+}
+
+i.fa {
+	font-size: 3rem;
+	cursor: pointer;
+	padding: 0.6rem;
+}
+
 /*** Canvas grid ***/
 
 table, tr, td {

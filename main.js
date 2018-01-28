@@ -24,6 +24,12 @@ let sizeSq = $("#square-size").val();
 	
 $("td").css("width", sizeSq);
 $("tr").css("height", sizeSq);	
+
+$("td").css("background-color", "white");
+
+// welcome text
+
+$("#paint-text").css("display", "block");
 };
 
 
@@ -40,4 +46,15 @@ $("body").on("click", "td", function() {
 })
 
 
+// clear the grid options
 
+$("#eraser").on("click", function() {
+	$("td").css("background-color", "white");
+})
+
+// change the background color
+
+$("#set-bg").on("click", function() {
+	let color = $("#color-picker").val();
+	$("td").css("background-color", color)
+})

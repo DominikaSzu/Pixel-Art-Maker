@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="styles.css">
 	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
 	<header>
@@ -27,7 +28,11 @@
 		</form>
 		<h4>Which color?</h4>
 		<input type="color" id="color-picker">
-		<h5>Now, just paint! :)</h5>
+		<div id="option-bar">
+				<i id="eraser" class="fa fa-eraser" aria-hidden="true" title="Clear the Grid"></i>
+				<i id="set-bg" class="fa fa-th" aria-hidden="true" title="Change the background"></i>
+		</div>
+		<h5 id="paint-text">Now, just paint! :)</h5>
 		<table id="canvas"></table>
 	</main>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
